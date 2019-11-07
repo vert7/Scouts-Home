@@ -1,3 +1,20 @@
-/* 
-    General Styles
-*/
+button:not(:disabled), [type="button"]:not(:disabled),
+[type="reset"]:not(:disabled), [type="submit"]:not(:disabled){cursor:default;}
+.btn.secondary:hover{cursor:pointer;}
+.btn{padding:0rem 0.5rem;border-radius:20px;}
+.button-box{display:grid;list-style:none;margin-block-start:1em;margin-block-end:1em;
+            margin-inline-start:0px;margin-inline-end:0px;padding-inline-start:40px;}
+.suggest{font-size:1.8rem;padding:0rem 0.5rem;border-radius:21px;display:block;color:white;
+        background-color:salmon;margin-right:5px;margin-top:10px;text-align:left;}
+.primary{background-color:salmon;margin-right:4px;color:white;}
+.secondary{margin-right:10px;}
+.primary a:hover{color: salmon;}
+.Logo-Nav{height:50px;width:50px;}
+.lead{font-size:34px}
+.JumboPic{border-radius:200px;}
+.jumbotron{background-color:salmon;margin-top:0px;margin-bottom:0px;height:500px;width:100%;}
+.row{height:300px;}
+.foot-h1{margin-left:35px;margin-top:120px;width:75%;font-weight:lighter;font-size:2.5rem;}
+.foot-h2{margin-left:80px;margin-top:30px;margin-bottom:5px;font-weight:lighter;font-size:1rem;}
+.column1{margin-top:40px;}
+.column2{margin-left:69px;}
