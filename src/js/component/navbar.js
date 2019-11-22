@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../img/ScoutMaster.jpg";
+import Logo from "../../img/ScoutLogoDemo.png";
 
 export class Navbar extends React.Component {
 	render() {
