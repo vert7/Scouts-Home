@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Discover } from "./views/discover";
+import { Registration } from "./views/registration";
 import Homefeed from "./component/home-feed";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
@@ -26,6 +27,7 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route exact path="/discover" component={Discover} />
 						<Route exact path="/homefeed" component={Homefeed} />
+						<Route exact path="/registration" component={Registration} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
