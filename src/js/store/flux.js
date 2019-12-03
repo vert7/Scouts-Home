@@ -97,6 +97,29 @@ const getState = ({ getStore, getActions, setStore }) => {
 					return elm;
 				});
 
+				fetch(
+					"https://8080-c51edddf-8ac0-4c19-85b0-ef4072c02d0c.ws-us02.gitpod.io/wp-json/sample_api/v1/venue",
+					{
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json"
+						},
+						body: JSON.stringify(object)
+					}
+				)
+					.then(response => {
+						if (!response.ok) {
+							throw Error(response.statusText);
+						}
+						// Examine the text in the response
+						response.json().then(data => {
+							console.log(data);
+						});
+					})
+					.catch(function(err) {
+						console.log("Fetch Error :-S", err);
+					});
+
 				//reset the global store
 				setStore({ demo: demo });
 			}

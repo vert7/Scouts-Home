@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../img/ScoutLogoDemo.png";
+import Logo from "../../img/scout master.png";
 
 export class Navbar extends React.Component {
 	render() {
@@ -11,10 +11,15 @@ export class Navbar extends React.Component {
 						<img className="Logo-Nav" src={Logo} />
 					</span>
 				</Link>
+				<Link to="/discover">
+					<input className="discoverbar" type="text" name="search" placeholder="Discover" />
+				</Link>
 				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn primary">Join now</button>
-						<button className="btn secondary">Sign in</button>
+					<Link to="">
+						<button className="btn btn-primary">Join now</button>
+					</Link>
+					<Link to="">
+						<button className="btn btn-secondary">Sign in</button>
 					</Link>
 				</div>
 			</nav>

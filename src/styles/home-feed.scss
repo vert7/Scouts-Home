@@ -1,0 +1,54 @@
+.SplitPane.vertical{
+    background-color:#e9ebee;
+    padding-top:15px;
+}
+.Pane.vertical.Pane1{
+    background-color:#e9ebee;
+    padding-right:15px;
+    width:25%!important;
+}
+.Pane.vertical.Pane2{
+    padding-right:30%;
+}
+.pane-main{
+    background-color: white;
+    height:200px;
+    border:solid thin lightgray;
+}
+.Pane.pane-edit{
+    margin-left:20%;
+}
+.yout1{
+    margin-top:10px;
+}
+.yout2{
+    margin-top:15px;
+}
+.crt-post{
+    background-color: whitesmoke;
+    border-bottom:solid 1px lightgray;
+    padding:5px;
+}
+i.far.fa-newspaper{
+    margin-right:8px;
+    font-size:larger;
+}
+i.far.fa-envelope{
+    margin-right:8px;
+    margin-left:2px;
+    font-size:larger;
+}
+i.fas.fa-users{
+    margin-right: 7px;
+    font-size: larger;
+    margin-left: -1px;
+}
+i.far.fa-calendar-minus{
+    margin-right: 12px;
+    font-size: larger;
+    margin-left: 2px;
+}
+.avatar{
+    width: 40px;
+    border-radius: 200px;
+}

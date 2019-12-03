@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
+import { Discover } from "./views/discover";
+import Homefeed from "./component/home-feed";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
@@ -19,12 +21,16 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbar />
+
 					<Switch>
 						<Route exact path="/" component={Home} />
+						<Route exact path="/discover" component={Discover} />
+						<Route exact path="/homefeed" component={Homefeed} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
+
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
