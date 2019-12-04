@@ -1,6 +1,5 @@
 import React from "react";
 import { Jumbotron, Container } from "reactstrap";
-import Social from "../../img/music_business.jpg";
 import JumboBack from "../../img/man-mic.png";
 
 const Homejumbotron = () => {

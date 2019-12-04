@@ -18,7 +18,7 @@ export class Navbar extends React.Component {
 					<Link to="/registration">
 						<button className="btn btn-primary">Join now</button>
 					</Link>
-					<Link to="">
+					<Link to="/login">
 						<button className="btn btn-secondary">Sign in</button>
 					</Link>
 				</div>
