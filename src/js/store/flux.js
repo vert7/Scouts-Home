@@ -1,7 +1,9 @@
+const apiServer = "https://8080-c51edddf-8ac0-4c19-85b0-ef4072c02d0c.ws-us02.gitpod.io";
+
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			profiles: [],
+			venue: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -47,7 +49,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						return err;
 					});
 			},
-			changeThisName: () => {
+			getVenue: () => {
 				fetch(apiServer + "/wp-json/sample_api/v1/venue", {
 					method: "GET"
 				})
@@ -57,7 +59,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 						}
 
 						response.json().then(data => {
-							store.profile = data;
+							let store = getStore();
+							store.venue = data;
 							setStore({ store });
 						});
 					})
