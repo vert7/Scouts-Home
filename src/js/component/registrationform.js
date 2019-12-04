@@ -44,7 +44,7 @@ const Registrationform = () => {
 							<Input type="checkbox" /> Receive email communications
 						</Label>
 					</FormGroup>
-					<Button className="submitsignup">Submit</Button>
+					<Button className="sendsignup">Submit</Button>
 				</Form-sm>
 			</center>
 		</div>
