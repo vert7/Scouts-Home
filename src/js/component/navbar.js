@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../img/scout master.png";
+import Logo from "../../img/Scout-Nav-Logo4.png";
 
 export class Navbar extends React.Component {
 	render() {
@@ -15,10 +15,10 @@ export class Navbar extends React.Component {
 					<input className="discoverbar" type="text" name="search" placeholder="Discover" />
 				</Link>
 				<div className="ml-auto">
-					<Link to="">
+					<Link to="/registration">
 						<button className="btn btn-primary">Join now</button>
 					</Link>
-					<Link to="">
+					<Link to="/login">
 						<button className="btn btn-secondary">Sign in</button>
 					</Link>
 				</div>
