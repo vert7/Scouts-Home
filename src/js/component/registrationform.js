@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import "../../styles/registration.scss";
 
 const Registrationform = () => {
 	return (
@@ -22,11 +23,11 @@ const Registrationform = () => {
 					</FormGroup>
 					<FormGroup>
 						<Label for="exampleFile">Upload your profile photo.</Label>
-						<Input type="file" name="file" id="exampleFile" />
+						<Input type="file" align="middle" name="file" id="exampleFile" />
 						<FormText color="light">P.S. Artists with profile photos get more hits</FormText>
 					</FormGroup>
 					<FormGroup tag="fieldset">
-						<legend>You will be using ScoutMasters as...</legend>
+						<legend>You will be using ScoutMaster as...</legend>
 						<FormGroup check>
 							<Label check>
 								<Input type="radio" name="radio1" /> An Artist
@@ -43,7 +44,7 @@ const Registrationform = () => {
 							<Input type="checkbox" /> Receive email communications
 						</Label>
 					</FormGroup>
-					<Button>Submit</Button>
+					<Button className="submitsignup">Submit</Button>
 				</Form-sm>
 			</center>
 		</div>
