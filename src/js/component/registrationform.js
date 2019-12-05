@@ -10,16 +10,11 @@ const Registrationform = () => {
 				<Form-sm>
 					<FormGroup>
 						<Label for="exampleEmail">Email</Label>
-						<Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+						<Input type="email" name="email" id="exampleEmail" placeholder="Enter email" />
 					</FormGroup>
 					<FormGroup>
 						<Label for="examplePassword">Password</Label>
-						<Input
-							type="password"
-							name="password"
-							id="examplePassword"
-							placeholder="password placeholder"
-						/>
+						<Input type="password" name="password" id="examplePassword" placeholder="Password" />
 					</FormGroup>
 					<FormGroup>
 						<Label for="exampleFile">Upload your profile photo.</Label>
@@ -44,7 +39,7 @@ const Registrationform = () => {
 							<Input type="checkbox" /> Receive email communications
 						</Label>
 					</FormGroup>
-					<Button className="submitsignup">Submit</Button>
+					<Button className="button button2">Submit</Button>
 				</Form-sm>
 			</center>
 		</div>

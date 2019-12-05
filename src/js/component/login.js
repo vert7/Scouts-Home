@@ -4,7 +4,7 @@ import "../../styles/login.scss";
 export const Login = () => {
 	return (
 		<div className="bg-image">
-			<div className="container">
+			<div className="container login">
 				<form>
 					<div className="scout-masters-logo" />
 
