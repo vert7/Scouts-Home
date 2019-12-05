@@ -38,3 +38,13 @@ export const Login = () => {
 		</div>
 	);
 };
+
+// <Context.Consumer>
+// 	{({ store, actions }) => {
+// 		if (store.session.isLoggedIn === true) {
+// 			return <CommentForm barID={this.props.match.params.theid} />;
+// 		} else {
+// 			return <h6 className="text-muted">Please Log In</h6>;
+// 		}
+// 	}}
+// </Context.Consumer>

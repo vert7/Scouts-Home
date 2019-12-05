@@ -5,20 +5,89 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			venue: [],
 			profile: [],
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			session: {
+				isLoggedIn: false,
+				username: "user",
+				password: "pass",
+				token: ""
+			}
 		},
 		actions: {
+			createUser: (user, password, email, confirmPassword) => {
+				fetch(apiServer + "/wp/v2/users/register", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						username: user,
+						password: password,
+						email: email
+					})
+				})
+					.then(res => {
+						if (res.status !== 200) {
+							console.log("error " + res.status);
+							return;
+						}
+						res.json().then(data => {
+							setStore({ user: data });
+						});
+					})
+					.catch(err => {
+						alert("Fetch error: ", err);
+					});
+			},
+			getUser: () => {
+				fetch(apiServer + "/wp/v2/users", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						username: user
+					})
+				})
+					.then(res => {
+						if (res.status !== 200) {
+							console.log("error" + res.status);
+							return;
+						}
+						res.json().then(data => {
+							let store = getStore();
+							setStore({
+								store
+							});
+						});
+					})
+					.catch(err => {
+						alert("Fetch error: ", err);
+					});
+			},
+			login: (user, pass) => {
+				fetch(apiServer + "/jwt-auth/v1/token", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify({
+						username: user,
+						password: pass
+					})
+				})
+					.then(res => {
+						if (res.status !== 200) {
+							console.log("error" + res.status);
+							return;
+						}
+						res.json().then(data => {
+							setStore({ session: { ...data, isLoggedIn: true } });
+						});
+					})
+					.catch(err => {
+						alert("Fetch error: ", err);
+					});
+			},
 			generateToken: (username, password) => {
 				let store = getStore();
 				// lets assume that you have a variable in your store for user to store user data when logged in
@@ -40,15 +109,50 @@ const getState = ({ getStore, getActions, setStore }) => {
 						}
 
 						response.json().then(data => {
-							store.user = data;
-							store.loggedIn = true;
-							store.profiles = data;
-							setStore({ store });
+							console.log(data);
+							// store.user = data;
+							// store.loggedIn = true;
+							// store.profiles = data;
+							// setStore({ store });
 						});
 					})
 					.catch(err => {
 						return err;
 					});
+			},
+			checkToken: () => {
+				let tokenCheck = JSON.parse(localStorage.getItem("yourApp-userData"));
+
+				if (tokenCheck !== null) {
+					// set current user data to store
+					setStore({ user: tokenCheck });
+
+					// fetch to validate current token
+					fetch(apiServer + "/wp-json/jwt-auth/v1/token/validate", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+							Authorization: "Bearer " + token
+						}
+					})
+						.then(response => {
+							response.json(data => {
+								// token is valid
+								setStore({
+									loggedIn: true
+								});
+							});
+						})
+						.catch(err => {
+							return err;
+						});
+				} else {
+					setStore({
+						...store,
+						loggedIn: false,
+						user: null
+					});
+				}
 			},
 			getVenue: () => {
 				fetch(apiServer + "/wp-json/sample_api/v1/venue", {
@@ -60,9 +164,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						}
 
 						response.json().then(data => {
-							let store = getStore();
-							store.venue = data;
-							setStore({ store });
+							setStore({ venue: data });
 						});
 					})
 					.catch(err => {
@@ -79,9 +181,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 						}
 
 						response.json().then(data => {
-							let store = getStore();
-							store.profile = data;
-							setStore({ store });
+							setStore({
+								profile: data
+							});
 						});
 					})
 					.catch(err => {
