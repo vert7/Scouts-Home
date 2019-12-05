@@ -4,6 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			venue: [],
+			profile: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -61,6 +62,25 @@ const getState = ({ getStore, getActions, setStore }) => {
 						response.json().then(data => {
 							let store = getStore();
 							store.venue = data;
+							setStore({ store });
+						});
+					})
+					.catch(err => {
+						return err;
+					});
+			},
+			getProfile: () => {
+				fetch(apiServer + "/wp-json/sample_api/v1/venue", {
+					method: "GET"
+				})
+					.then(response => {
+						if (response.status !== 200) {
+							return "Connection error: " + response.status;
+						}
+
+						response.json().then(data => {
+							let store = getStore();
+							store.profile = data;
 							setStore({ store });
 						});
 					})
