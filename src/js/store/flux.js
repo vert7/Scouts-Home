@@ -70,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 			getProfile: () => {
-				fetch(apiServer + "/wp-json/sample_api/v1/venue", {
+				fetch(apiServer + "/wp-json/sample_api/v1/profile", {
 					method: "GET"
 				})
 					.then(response => {
