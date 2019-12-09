@@ -29,7 +29,7 @@ export const Login = () => {
 								placeholder="Password"
 							/>
 						</div>
-						<button type="submit" className="btn btn-danger">
+						<button type="submit" className="btn btn-danger ">
 							Submit
 						</button>
 					</div>
