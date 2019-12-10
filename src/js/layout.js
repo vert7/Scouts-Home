@@ -26,6 +26,7 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route path="/login" component={Login} />
 							<Route path="/registration" component={Registration} />
+							<Route path="/homefeed" component={Homefeed} />
 							<Route
 								path="/"
 								render={() => (
@@ -34,7 +35,6 @@ export class Layout extends React.Component {
 										<Switch>
 											<Route exact path="/" component={Home} />
 											<Route path="/discover" component={Discover} />
-											<Route path="/homefeed" component={Homefeed} />
 											<Route path="/artistsprofile" component={Artistprofile} />
 										</Switch>
 										<Footer />
