@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/login.scss";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
 	return (
@@ -9,7 +10,9 @@ export const Login = () => {
 					<div className="scout-masters-logo" />
 
 					<div className="sign-in d-flex flex-column align-items-center">
-						<h2>Sign in</h2>
+						<Link to="/">
+							<h2>Sign in</h2>
+						</Link>
 						<div className="form-group">
 							<label htmlFor="exampleInputEmail1" />
 							<input
