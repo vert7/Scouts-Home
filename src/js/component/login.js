@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/login.scss";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
 	return (
@@ -29,9 +30,11 @@ export const Login = () => {
 								placeholder="Password"
 							/>
 						</div>
-						<button type="submit" className="btn btn-danger ">
-							Submit
-						</button>
+						<Link to="/homefeed">
+							<button type="submit" className="btn btn-danger ">
+								Submit
+							</button>
+						</Link>
 					</div>
 				</form>
 			</div>

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button, FormGroup, Label, Input, FormText } from "reactstrap";
 import "../../styles/registration.scss";
+import { Consumer } from "../store/appContext";
 
 const Registrationform = () => {
+	const { actions } = useContext(Consumer);
+
 	return (
 		<div className="signupspace">
 			<center>
@@ -40,6 +43,7 @@ const Registrationform = () => {
 						</Label>
 					</FormGroup>
 					<Button className="button button2">Submit</Button>
+					<button onClick={() => actions.createUser()}>Perez</button>
 				</Form-sm>
 			</center>
 		</div>

@@ -14,15 +14,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			createUser: (user, password, email, confirmPassword) => {
-				fetch(apiServer + "/wp/v2/users/register", {
+				fetch(apiServer + "/jwt-auth/v1", {
 					method: "POST",
+					mode: "no-cors",
 					headers: {
 						"Content-Type": "application/json"
 					},
 					body: JSON.stringify({
-						username: user,
-						password: password,
-						email: email
+						username: "jonperezzz",
+						password: "drunken master",
+						email: "brew@drinking.com"
 					})
 				})
 					.then(res => {
@@ -31,7 +32,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 							return;
 						}
 						res.json().then(data => {
-							setStore({ user: data });
+							console.log(data);
+							// setStore({ user: data });
 						});
 					})
 					.catch(err => {
