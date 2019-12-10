@@ -16,7 +16,7 @@
     border:solid thin lightgray;
 }
 .Pane.pane-edit{
-    margin-left:20%;
+    margin-left:40%;
 }
 .yout1{
     margin-top:10px;
@@ -39,16 +39,25 @@ i.far.fa-envelope{
     font-size:larger;
 }
 i.fas.fa-users{
-    margin-right: 7px;
-    font-size: larger;
-    margin-left: -1px;
+    margin-right:7px;
+    font-size:larger;
+    margin-left:-1px;
 }
 i.far.fa-calendar-minus{
-    margin-right: 12px;
+    margin-right:12px;
     font-size: larger;
     margin-left: 2px;
 }
-.avatar{
-    width: 40px;
-    border-radius: 200px;
+.avatar1{
+    width:22px;
+    border-radius:200px;
+    margin-right:8px;
+}
+.avatar2{
+    width:50px;
+    border-radius:200px;
+}
+#right-comment-col{
+    width:80%;
+    border-bottom: lightgray thin 1px;
 }
