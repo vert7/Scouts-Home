@@ -11,7 +11,7 @@ export const Login = () => {
 
 					<div className="sign-in d-flex flex-column align-items-center">
 						<Link to="/">
-							<h2>Sign in</h2>
+							<h2 className="signintext">Sign in</h2>
 						</Link>
 						<div className="form-group">
 							<label htmlFor="exampleInputEmail1" />
