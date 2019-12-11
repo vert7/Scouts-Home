@@ -6,6 +6,7 @@ import { Home } from "./views/home";
 import { Discover } from "./views/discover";
 import { Registration } from "./views/registration";
 import { Artistprofile } from "./views/artistprofile";
+import { Scoutprofile } from "./views/scoutprofile";
 import Homefeed from "./component/home-feed";
 import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
@@ -35,6 +36,7 @@ export class Layout extends React.Component {
 											<Route exact path="/" component={Home} />
 											<Route path="/discover" component={Discover} />
 											<Route path="/artistsprofile" component={Artistprofile} />
+											<Route exact path="/scoutprofile" component={Scoutprofile} />
 											<Route path="/homefeed" component={Homefeed} />
 										</Switch>
 										<Footer />
