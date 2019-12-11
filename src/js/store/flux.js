@@ -7,7 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			profile: [],
 			session: {
 				isLoggedIn: false,
-				username: "user",
+				username: "Scout Dude",
 				first_name: "Jon",
 				email: "drunken@gmail.com",
 				profileImage:

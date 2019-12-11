@@ -1,5 +1,7 @@
 import "../../styles/home-feed.scss";
+import { Link } from "react-router-dom";
 import React, { useContext } from "react";
+import Avatar from "../../img/user-avatar.jpg";
 import { Context } from "../store/appContext.js";
 import SplitPane, { Pane } from "react-split-pane";
 import { FormGroup, Label, Input } from "reactstrap";
@@ -12,7 +14,6 @@ const Homefeed = () => {
 				<Pane initialSize="200px" className="pane-edit">
 					<div className="yout1">
 						<img src={store.session.profileImage} className="avatar1" />
-						Profile:
 						{store.session.username}
 					</div>
 					<div className="yout2">
@@ -33,7 +34,7 @@ const Homefeed = () => {
 					</div>
 				</Pane>
 				<Pane initialSize="25%" minSize="10%" maxSize="500px" className="pane-main">
-					<div className="crt-post">Create post</div>
+					<div className="crt-post">Create Post</div>
 					<FormGroup className="d-flex align-items-start">
 						<Label for="exampleText" className="column" id="left-comment-col">
 							<img src={store.session.profileImage} className="avatar2" />
@@ -58,6 +59,14 @@ const Homefeed = () => {
 						<button className="p-2 bd-highlight" id="btn-commentbox">
 							...
 						</button>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<Link to="/">
+							<div id="feed-main-header-text">{store.session.username}</div>
+						</Link>
 					</div>
 				</Pane>
 			</SplitPane>
