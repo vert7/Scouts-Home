@@ -48,11 +48,11 @@ const Homefeed = () => {
 					</FormGroup>
 					<div className="d-flex flex-row bd-highlight mb-3">
 						<button className="p-2 bd-highlight" id="btn-commentbox">
-							<i className="fas fa-images" />
+							<i className="fas fa-images" id="btn-commentbox-icon" />
 							Photo/Video
 						</button>
 						<button className="p-2 bd-highlight" id="btn-commentbox">
-							<i className="fas fa-user-tag" />
+							<i className="fas fa-user-tag" id="btn-commentbox-icon" />
 							Tag Amigos
 						</button>
 						<button className="p-2 bd-highlight" id="btn-commentbox">

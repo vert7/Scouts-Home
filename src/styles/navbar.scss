@@ -30,9 +30,15 @@
     border:none !important;
     background-color:#cb0022!important;
 }
+button.btn.btn-primary{
+    padding-bottom:4px!important;
+    padding-top:4px!important;
+}
 button.btn.btn-secondary{
     padding-left:6px;
     padding-right:6px;
+    padding-top:4px !important;
+    padding-bottom:5px !important;
     background-color:transparent !important;
     color:black !important;
     border:none !important;

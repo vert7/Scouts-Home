@@ -1,31 +1,132 @@
-.jumbotron{padding:0%!important;}
-.main-head{font-size:4rem;font-weight:300;}
-.sub-head{font-size:1.7rem;}
-.container-fluid{padding:0%!important;margin:0%!important;padding-left:15%!important;
-        padding-right:15%!important;}
-div#Jumbo1-row{padding-top:6%!important;background-color: #cb0022a8;height:530px!important;position: absolute;top: 0;}
-#suggest-row{height:340px;background-color:white;}
-.overlay-red{background-color:#cb0022b5;}
-.JumboPic{border-radius:200px;height:330px;width:594px;
-@media screen and(max-width:900px){display:none;}}
-.JumboBack{transform:scaleX(-1);height:530px;width:100%;object-fit:cover;}
-.Jumbo1.jumbotron{margin-top:0%!important;margin-bottom:0px!important;
-        height:500px!important;width:100%!important;background-size:cover;position:relative;}
-.Jumbo2.jumbotron.jumbotron-fluid{margin-bottom:0%!important;}
-.foot-h1{width:79%;font-weight:lighter;font-size:2.3rem;}
-.foot-h2{margin-left:10px;margin-top:55px;margin-bottom:5px;font-weight:lighter;font-size:1rem;}
-.foot-h3{margin-left:35px;margin-top:120px;width:93%;font-weight:lighter;font-size:2.3rem;}
-.foot-h4{margin-left:35px;margin-top:10px;width:93%;font-weight:lighter;font-size:1.5rem;}
-.foot-pic{height:370px;width:532px;border-radius:50%;border-top-left-radius:37%;
-        border-top-right-radius:100%;border-bottom-right-radius:36%;border-bottom-left-radius:100%;
-        margin-top:10%;}
-table#suggest-table{padding-inline-start:0px;}
-.col-first{margin-top:90px;margin-left:0px;color:white;}
-.col-second{margin-left:40px;}
-.col-third{margin-left:0px;margin-top:100px;}
-.col-fourth{margin-left:10px;}
-#row-2{background-color:#ff00001a;height:470px;}
-#btn-amplify1{margin-left:35px;margin-top:15px;width:75%;font-weight:lighter;font-size:1.2rem;}
-#btn-amplify2{margin-left:35px;margin-top:15px;width:75%;font-weight:lighter;font-size:1.2rem;}
-.btns-foot{background-color:#5cc0c64d;border:none;padding:10px;}
-#right-col{margin-left:0px;}
+.jumbotron{
+    padding:0%!important;
+}
+.main-head{
+    font-size:4rem;
+    font-weight:300;
+}
+.sub-head{
+    font-size:1.7rem;
+}
+.container-fluid{
+    padding:0%!important;
+    margin:0%!important;
+    padding-left:15%!important;
+    padding-right:15%!important;
+}
+div#Jumbo1-row{
+    padding-top:6%!important;
+    background-color: #cb0022a8;
+    height:530px!important;
+    position: absolute;top: 0;
+}
+#suggest-row{
+    height:340px;
+    background-color:white;
+}
+.overlay-red{
+    background-color:#cb0022b5;
+}
+.JumboPic{
+    border-radius:200px;
+    height:330px;
+    width:594px;
+    @media screen and(max-width:900px){display:none;}
+}
+.JumboBack{
+    transform:scaleX(-1);
+    height:530px;
+    width:100%;
+    object-fit:cover;
+}
+.Jumbo1.jumbotron{
+    margin-top:0%!important;
+    margin-bottom:0px!important;
+    height:500px!important;
+    width:100%!important;
+    background-size:cover;
+    position:relative;
+}
+.Jumbo2.jumbotron.jumbotron-fluid{
+    margin-bottom:0%!important;
+}
+.foot-h1{
+    width:79%;
+    font-weight:lighter;
+    font-size:2.3rem;
+}
+.foot-h2{
+    margin-left:10px;
+    margin-top:55px;
+    margin-bottom:5px;
+    font-weight:lighter;
+    font-size:1rem;
+}
+.foot-h3{
+    margin-left:35px;
+    margin-top:120px;
+    width:93%;
+    font-weight:lighter;
+    font-size:2.3rem;
+}
+.foot-h4{
+    margin-left:35px;
+    margin-top:10px;
+    width:93%;
+    font-weight:lighter;
+    font-size:1.5rem;
+}
+.foot-pic{
+    height:370px;
+    width:532px;
+    border-radius:50%;
+    border-top-left-radius:37%;
+    border-top-right-radius:100%;
+    border-bottom-right-radius:36%;
+    border-bottom-left-radius:100%;
+    margin-top:10%;
+}
+table#suggest-table{
+    padding-inline-start:0px;
+}
+.col-first{
+    margin-top:90px;
+    margin-left:0px;
+    color:white;
+    }
+.col-second{
+    margin-left:40px;
+    }
+.col-third{
+    margin-left:0px;
+    margin-top:100px;
+}
+.col-fourth{
+    margin-left:10px;
+}
+#row-2{
+    background-color:#ff00001a;
+    height:470px;
+}
+#btn-amplify1{
+    margin-left:35px;
+    margin-top:15px;
+    width:75%;
+    font-weight:lighter;
+    font-size:1.2rem;
+}
+#btn-amplify2{
+    margin-left:35px;
+    margin-top:15px;
+    width:75%;
+    font-weight:lighter;
+    font-size:1.2rem;
+}
+.btns-foot{
+    background-color:#5cc0c64d;
+    border:none;
+    padding:10px;
+}
+#right-col{
+    margin-left:0px;
+}

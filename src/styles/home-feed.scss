@@ -4,6 +4,7 @@
 }
 .Pane.vertical.Pane1{
     background-color:#e9ebee;
+    position:sticky;
     padding-right:15px;
     width:25%!important;
 }
@@ -12,11 +13,12 @@
 }
 .pane-main{
     background-color: white;
-    height:200px;
+    height:180px;
     border:solid thin lightgray;
 }
 .Pane.pane-edit{
     margin-left:40%;
+    background-color:#e9ebee;
 }
 .yout1{
     margin-top:10px;
@@ -80,4 +82,7 @@ i.far.fa-calendar-minus{
     margin-left:10px;
     margin-right:5px;
     text-align:left;
+}
+#btn-commentbox-icon{
+    margin-right: 4px;
 }
