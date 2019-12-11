@@ -26,7 +26,7 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Switch>
 							<Route path="/login" component={Login} />
-							<Route path="/registration" component={Registration} />
+							<Route path="/signup" component={Registration} />
 							<Route
 								path="/"
 								render={() => (
@@ -35,7 +35,7 @@ export class Layout extends React.Component {
 										<Switch>
 											<Route exact path="/" component={Home} />
 											<Route path="/discover" component={Discover} />
-											<Route path="/artistsprofile" component={Artistprofile} />
+											<Route exact path="/artistprofile" component={Artistprofile} />
 											<Route exact path="/scoutprofile" component={Scoutprofile} />
 											<Route path="/homefeed" component={Homefeed} />
 										</Switch>

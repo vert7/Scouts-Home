@@ -83,5 +83,4 @@ const Artistwork = () => {
 		</CardColumns>
 	);
 };
-
 export default Artistwork;
