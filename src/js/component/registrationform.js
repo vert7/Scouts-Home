@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { Button, FormGroup, Label, Input, FormText } from "reactstrap";
 import "../../styles/registration.scss";
-import { Consumer } from "../store/appContext";
+import { Context } from "../store/appContext";
 
 const Registrationform = () => {
-	const { actions } = useContext(Consumer);
+	const { actions } = useContext(Context);
 
 	return (
 		<div className="signupspace">

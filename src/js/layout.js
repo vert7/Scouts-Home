@@ -26,7 +26,7 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Switch>
 							<Route path="/login" component={Login} />
-							<Route path="/registration" component={Registration} />
+							<Route path="/signup" component={Registration} />
 							<Route
 								path="/"
 								render={() => (

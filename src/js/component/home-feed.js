@@ -13,7 +13,7 @@ const Homefeed = () => {
 					<div className="yout1">
 						<img src={store.session.profileImage} className="avatar1" />
 						Profile:
-						{store.session.username}
+						{store.profile[0] && store.profile[0].acf.experience}
 					</div>
 					<div className="yout2">
 						<i className="far fa-newspaper" />
