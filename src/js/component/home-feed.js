@@ -14,8 +14,7 @@ const Homefeed = () => {
 				<Pane initialSize="200px" className="pane-edit">
 					<div className="yout1">
 						<img src={store.session.profileImage} className="avatar1" />
-						Profile:
-						{store.profile[0] && store.profile[0].acf.experience}
+						{store.profile[0] && store.profile[0].acf.name}
 					</div>
 					<div className="yout2">
 						<i className="far fa-newspaper" />
