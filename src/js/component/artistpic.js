@@ -24,11 +24,11 @@ const Artistcolumn = () => {
 				<button type="button" className="btn btn-default">
 					Message me
 				</button>
-				<h2>Previous Collaborators</h2>
+				<h2>Genre</h2>
 				<p>
-					<strong>Recruiters comments:</strong> laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-					irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint
+					<strong>Scouts comments:</strong> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+					sint
 				</p>
 			</CardBody>
 		</Card>
