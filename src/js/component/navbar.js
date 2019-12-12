@@ -49,7 +49,7 @@ export class Navbar extends React.Component {
 										/>
 									</Link>
 									<div className="ml-auto">
-										<Link to="/registration">
+										<Link to="/signup">
 											<button className="btn btn-primary">Join now</button>
 										</Link>
 										<Link to="/login">

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button, FormGroup, Label, Input, FormText } from "reactstrap";
 import "../../styles/registration.scss";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 const Registrationform = () => {
 	const { actions } = useContext(Context);
@@ -42,7 +43,9 @@ const Registrationform = () => {
 							<Input type="checkbox" /> Receive email communications
 						</Label>
 					</FormGroup>
-					<button onClick={() => actions.createUser()}>Submit</button>
+					<Link to="/homefeed">
+						<button onClick={() => actions.createUser()}>Submit</button>
+					</Link>
 				</Form-sm>
 			</center>
 		</div>
