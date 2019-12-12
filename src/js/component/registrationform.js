@@ -42,8 +42,7 @@ const Registrationform = () => {
 							<Input type="checkbox" /> Receive email communications
 						</Label>
 					</FormGroup>
-					<Button className="button button2">Submit</Button>
-					<button onClick={() => actions.createUser()}>Perez</button>
+					<button onClick={() => actions.createUser()}>Submit</button>
 				</Form-sm>
 			</center>
 		</div>
