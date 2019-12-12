@@ -10,13 +10,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				username: "Scout Dude",
 				first_name: "Jon",
 				email: "drunken@gmail.com",
-				profileImage: "",
+				profileImage:
+					"https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg-1024x683.jpg",
 				token: ""
 			}
 		},
 		actions: {
 			createUser: (user, password, email, confirmPassword) => {
-				fetch(apiServer + "/jwt-auth/v1", {
+				fetch(apiServer + "/wp-json/jwt-auth/v1", {
 					method: "POST",
 					mode: "no-cors",
 					headers: {
@@ -69,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					});
 			},
 			login: (user, pass) => {
-				fetch(apiServer + "/jwt-auth/v1/token", {
+				fetch(apiServer + "/wp-json/jwt-auth/v1/token", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"
@@ -85,7 +86,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 							return;
 						}
 						res.json().then(data => {
-							console.log(data);
+							console.log("LOGIN", data);
 							setStore({ session: { ...data, isLoggedIn: true } });
 						});
 					})
@@ -98,7 +99,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				// lets assume that you have a variable in your store for user to store user data when logged in
 				// and another variable for the login status
 
-				fetch(apiServer + "/jwt-auth/v1/token", {
+				fetch(apiServer + "/wp-json/jwt-auth/v1/token", {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"
@@ -205,7 +206,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					setStore({ store });
 
 					// fetch to validate current token
-					fetch(apiServer + "/jwt-auth/v1/token/validate", {
+					fetch(apiServer + "/wp-json/jwt-auth/v1/token/validate", {
 						method: "POST",
 						headers: {
 							"Content-Type": "application/json",

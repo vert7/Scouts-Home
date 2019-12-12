@@ -25,7 +25,7 @@ const injectContext = PassedComponent => {
 			state.actions.getVenue();
 			state.actions.getProfile();
 			state.actions.generateToken();
-			state.actions.login("testaccount@gmail.com", "12341234");
+			state.actions.login("gitpod", "12341234");
 		}, []);
 
 		// the initial value for the context its not null anymore, but the current state of this component,

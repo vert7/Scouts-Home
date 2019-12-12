@@ -1,7 +1,8 @@
-import React from "react";
+import { Context } from "../store/appContext.js";
 import { Card, CardTitle, CardBody } from "reactstrap";
-
+import React, { useContext } from "react";
 const Artistschedule = () => {
+	const { store } = useContext(Context);
 	return (
 		<Card>
 			<CardBody>
@@ -23,12 +24,7 @@ const Artistschedule = () => {
 						<h1>add calendar widget</h1>
 						<p>
 							{" "}
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat Lorem
-							ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lore
-							sed do
+							<img src={store.venue[0] && store.venue[0].acf.image.url} />
 						</p>
 					</div>
 				</div>
