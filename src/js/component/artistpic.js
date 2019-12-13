@@ -7,7 +7,7 @@ const Artistcolumn = () => {
 	return (
 		<Card>
 			<CardBody>
-				<h1>{store.profile[3] && store.profile[3].acf.name}</h1>
+				<h1>{store.profile[5] && store.profile[5].acf.name}</h1>
 				<img
 					className="userpic"
 					src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
