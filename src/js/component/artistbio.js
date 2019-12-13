@@ -10,7 +10,7 @@ const Artistbio = () => {
 				<strong>
 					<CardTitle>Goals:</CardTitle>
 				</strong>
-				<CardText>{store.profile[3] && store.profile[3].acf.goals}</CardText>
+				<CardText>{store.profile[5] && store.profile[5].acf.goals}</CardText>
 				<strong>
 					<CardSubtitle>Influences:</CardSubtitle>
 				</strong>
