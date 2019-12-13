@@ -1,7 +1,6 @@
 import "../../styles/home-feed.scss";
 import { Link } from "react-router-dom";
 import React, { useContext } from "react";
-import Avatar from "../../img/user-avatar.jpg";
 import { Context } from "../store/appContext.js";
 import SplitPane, { Pane } from "react-split-pane";
 import { FormGroup, Label, Input } from "reactstrap";
@@ -13,7 +12,7 @@ const Homefeed = () => {
 			<SplitPane split="vertical">
 				<Pane initialSize="200px" className="pane-edit">
 					<div className="yout1">
-						<img src={store.session.profileImage} className="avatar1" />
+						<img src={store.profile[0] && store.profile[0].acf.image.url} className="avatar1" />
 						{store.profile[0] && store.profile[0].acf.name}
 					</div>
 					<div className="yout2">
@@ -37,13 +36,13 @@ const Homefeed = () => {
 					<div className="crt-post">Create Post</div>
 					<FormGroup className="d-flex align-items-start">
 						<Label for="exampleText" className="column" id="left-comment-col">
-							<img src={store.session.profileImage} className="avatar2" />
+							<img src={store.profile[0] && store.profile[0].acf.image.url} className="avatar2" />
 						</Label>
 						<Input
 							type="textarea"
 							name="text"
 							id="right-comment-col"
-							placeholder="what's up?"
+							placeholder="Wasabi?"
 							className="column"
 						/>
 					</FormGroup>
@@ -62,127 +61,71 @@ const Homefeed = () => {
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main2">
 						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
+							<img src={store.profile[3] && store.profile[3].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
+								<div id="feed-main-header-text">{store.profile[3] && store.profile[3].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
+								4 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">{store.profile[3] && store.profile[3].acf.comments}</p>
 							</div>
 						</div>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
+							<img src={store.profile[4] && store.profile[4].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
+								<div id="feed-main-header-text">{store.profile[4] && store.profile[4].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
+								10 min <i className="fas fa-binoculars" />
+								<p className="feed-content">{store.profile[4] && store.profile[4].acf.comments}</p>
 							</div>
 						</div>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
+							<img src={store.profile[1] && store.profile[1].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
+								<div id="feed-main-header-text">{store.profile[1] && store.profile[1].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
 								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
+								<p className="feed-content">{store.profile[1] && store.profile[1].acf.comments}</p>
 							</div>
 						</div>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
+							<img src={store.profile[5] && store.profile[5].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
+								<div id="feed-main-header-text">{store.profile[5] && store.profile[5].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
+								10 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">{store.profile[5] && store.profile[5].acf.comments}</p>
 							</div>
 						</div>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
+							<img src={store.profile[6] && store.profile[6].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
+								<div id="feed-main-header-text">{store.profile[6] && store.profile[6].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className="d-flex justify-content-start" id="feed-main">
-						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
-						</div>
-						<div className="list-detail">
-							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
-							</Link>
-							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div className="d-flex justify-content-start" id="feed-main">
-						<div id="feed-main-header">
-							<img src={Avatar} className="avatar2" />
-						</div>
-						<div className="list-detail">
-							<Link to="/">
-								<div id="feed-main-header-text">{store.session.username}</div>
-							</Link>
-							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">
-									If you are a young indie band, we want to work with you. We are a National-Wide
-									festival that runs all year roind. I am one of there few Talent bookers on this site
-									so please reach out to me through here.
-								</p>
+								30 min <i className="fas fa-binoculars" />
+								<p className="feed-content">{store.profile[6] && store.profile[6].acf.comments}</p>
 							</div>
 						</div>
 					</div>
