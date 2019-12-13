@@ -7,8 +7,9 @@ const Artistschedule = () => {
 		<Card>
 			<CardBody>
 				<strong>
-					<CardTitle>Event schedule</CardTitle>
+					<CardTitle>Event Schedule</CardTitle>
 				</strong>
+				Friday December 13th, 2019 @ 8pm
 				<div className="mapouter">
 					<div className="gmap_canvas">
 						<iframe
@@ -21,10 +22,9 @@ const Artistschedule = () => {
 							marginHeight="0"
 							marginWidth="0"
 						/>
-						<h1>add calendar widget</h1>
 						<p>
 							{" "}
-							<img src={store.venue[0] && store.venue[0].acf.image.url} />
+							<img className="venuepic" src={store.venue[0] && store.venue[0].acf.image.url} />
 						</p>
 					</div>
 				</div>

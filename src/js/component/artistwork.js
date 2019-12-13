@@ -30,7 +30,7 @@ const Artistwork = () => {
 					<CardTitle>Card title</CardTitle>
 					<CardSubtitle>Card subtitle</CardSubtitle>
 					<CardText>
-						This card has supporting text below as a natural lead-in to additional content.
+						Check out what I have been working on.
 						<iframe
 							width="100%"
 							height="300"
