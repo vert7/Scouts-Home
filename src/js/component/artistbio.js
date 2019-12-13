@@ -10,7 +10,7 @@ const Artistbio = () => {
 				<strong>
 					<CardTitle>Goals:</CardTitle>
 				</strong>
-				<CardText>{store.profile[5] && store.profile[5].acf.goals}</CardText>
+				<CardText>{store.profile[1] && store.profile[1].acf.goals}</CardText>
 				<strong>
 					<CardSubtitle>Influences:</CardSubtitle>
 				</strong>
@@ -21,9 +21,7 @@ const Artistbio = () => {
 				<strong>
 					<CardSubtitle>Experience:</CardSubtitle>
 				</strong>
-				<CardText>
-					10 years in the rap game and freestyling since the age of 16. Rap Battles are my forte.
-				</CardText>
+				<CardText>{store.profile[1] && store.profile[1].acf.experience}</CardText>
 			</CardBody>
 		</Card>
 	);
