@@ -87,19 +87,39 @@ i.far.fa-calendar-minus{
     margin-right: 4px;
 }
 #feed-main{
-    margin-top:10%;
+    margin-top:10px;
     background-color: white;
-    height:180px;
+    border:solid thin lightgray;
+}
+#feed-main2{
+    margin-top:33px;
+    background-color: white;
     border:solid thin lightgray;
 }
 #feed-main-header{
     margin-top: 2%;
     margin-left: 2%;
+    height:fit-content;
 }
 #feed-main-header-text{
-    color: #cb0022;
+    color:#cb0022;
+}
+.feed-user-detail{
+    height:fit-content;
+    font-weight: 300;
+    font-size: smaller;
+}
+.list-detail{
+    height:fit-content;
     font-weight: 500;
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 85px;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.feed-content{
+    font-weight: 100;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 0px;
+    right: 30px;
+    padding-bottom: 10px;
 }

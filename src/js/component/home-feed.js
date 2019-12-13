@@ -60,13 +60,131 @@ const Homefeed = () => {
 							...
 						</button>
 					</div>
+					<div className="d-flex justify-content-start" id="feed-main2">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
 							<img src={Avatar} className="avatar2" />
 						</div>
-						<Link to="/">
-							<div id="feed-main-header-text">{store.session.username}</div>
-						</Link>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="d-flex justify-content-start" id="feed-main">
+						<div id="feed-main-header">
+							<img src={Avatar} className="avatar2" />
+						</div>
+						<div className="list-detail">
+							<Link to="/">
+								<div id="feed-main-header-text">{store.session.username}</div>
+							</Link>
+							<div className="feed-user-detail">
+								3 hrs <i className="fas fa-binoculars" />
+								<p className="feed-content">
+									If you are a young indie band, we want to work with you. We are a National-Wide
+									festival that runs all year roind. I am one of there few Talent bookers on this site
+									so please reach out to me through here.
+								</p>
+							</div>
+						</div>
 					</div>
 				</Pane>
 			</SplitPane>
