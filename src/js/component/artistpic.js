@@ -27,8 +27,7 @@ const Artistcolumn = () => {
 				<h2>{store.profile[1] && store.profile[1].acf.genre}</h2>
 				<p>
 					<strong>Scouts comments:</strong> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-					sint
+					dolor in reprehenderit in voluptate velit.
 				</p>
 			</CardBody>
 		</Card>

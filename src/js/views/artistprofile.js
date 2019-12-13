@@ -8,10 +8,10 @@ import Artistcolumn from "../component/artistpic";
 
 export const Artistprofile = () => (
 	<div className="wrapper">
-		<div className="artist col-sm-2 text-center float-left">
+		<div className="artist-col">
 			<Artistcolumn />
 		</div>
-		<div className="events col-sm-2 float-right">
+		<div className="events-col">
 			<Artistschedule />
 		</div>
 

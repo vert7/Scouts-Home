@@ -1,7 +1,7 @@
 .userpic{
     border-radius: 70%;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     padding: 20px;
 }
@@ -27,16 +27,26 @@ form{
 .coverphotoimage{
     height: 250px;
 }
-.artist{
+.artist-col{
     background-color: #e9ebee;
+    float: left;
+    width:280px;
+    text-align: center;
     }
-.event{
+.events-col{
       background-color: #e9ebee;
+      float: right;
+      width:280px;
+      text-align: center;
 }
 .wrapper{
     background-color: #e9ebee;
+    margin-top:10px;
 }
 .venuepic{
     width: 250px;
     border-radius: 25px;
+}
+.d-flex.flex-column.h-100{
+    background-color: #e9ebee;
 }
