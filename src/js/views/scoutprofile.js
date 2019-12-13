@@ -7,7 +7,7 @@ import Scoutwork from "../component/scoutwork";
 
 export const Scoutprofile = () => (
 	<div className="wrapper">
-		<div className="scout col-sm-2 text-center float-left">
+		<div className="scout-col">
 			<Scoutcolumn />
 		</div>
 		<div className="col-sm-2 float-right" />

@@ -26,7 +26,9 @@ const Scoutwork = () => {
 			<Card>
 				<CardBody>
 					<CardTitle>Check it out</CardTitle>
-					<CardText>My artist is performing tonight.</CardText>
+					<CardText>
+						My artist is performing tonight at The House of Blues. Show starts at 10pm, see you there!
+					</CardText>
 					<CardImg
 						top
 						width="100%"
@@ -36,8 +38,8 @@ const Scoutwork = () => {
 				</CardBody>
 			</Card>
 			<Card body inverse style={{ backgroundColor: "#333", borderColor: "#333" }}>
-				<CardTitle>Special Title Treatment</CardTitle>
-				<CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+				<CardTitle>EDC is coming Soon</CardTitle>
+				<CardText>Want to make your way onto the big stage? Contact me for details.</CardText>
 				<CardImg
 					top
 					width="100%"
@@ -71,17 +73,14 @@ const Scoutwork = () => {
 					alt="Card image cap"
 				/>
 				<CardBody>
-					<CardTitle>Card title</CardTitle>
-					<CardSubtitle>Card subtitle</CardSubtitle>
-					<CardText>
-						This is a wider card with supporting text below as a natural lead-in to additional content. This
-						card has even longer content than the first to show that equal height action.
-					</CardText>
+					<CardTitle>New Project Underway</CardTitle>
+					<CardSubtitle>Evan Michaels collaboration</CardSubtitle>
+					<CardText>The new album is going to be amazing! Cannot wait for everyone to hear it.</CardText>
 				</CardBody>
 			</Card>
 			<Card>
 				<CardTitle>Songwriters are in high demand</CardTitle>
-				<CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+				<CardText>Your lyrics have the potential to be heard worldwide.</CardText>
 				<CardImg
 					top
 					width="100%"
