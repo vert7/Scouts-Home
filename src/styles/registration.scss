@@ -3,7 +3,7 @@
     margin: 0 auto;
     border: 2px solid #7d7d7d;
     background-color: #cb0022;
-    opacity: 50%;
+    // opacity: 50%;
     color:white;
     padding: 5px;
     border-radius: 24px;
@@ -19,8 +19,8 @@
 .form-control-file{
     margin-left: 80px;
 }
-.button2{
+button{
     border-radius: 4px;
-    border-color: #7d7d7d;
-    margin-left: 250px;
+    border-color: white;
+    background-color: #929292;
 }

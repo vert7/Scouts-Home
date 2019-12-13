@@ -32,11 +32,9 @@ export const Login = () => {
 								placeholder="Password"
 							/>
 						</div>
-						<Link to="/homefeed">
-							<button type="submit" className="btn btn-danger ">
-								Submit
-							</button>
-						</Link>
+						<button type="submit" className="btn btn-danger ">
+							Submit
+						</button>
 					</div>
 				</form>
 			</div>
