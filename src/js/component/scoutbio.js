@@ -14,7 +14,7 @@ const Scoutbio = () => {
 				<strong>
 					<CardSubtitle>Experience:</CardSubtitle>
 				</strong>
-				<CardText>{store.profile[2] && store.profile[2].acf.experience}</CardText>
+				<CardText>{store.profile[4] && store.profile[4].acf.experience}</CardText>
 				<strong>
 					<CardSubtitle>Artists Hired:</CardSubtitle>
 				</strong>

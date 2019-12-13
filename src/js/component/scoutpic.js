@@ -7,8 +7,8 @@ const Scoutcolumn = () => {
 	return (
 		<Card>
 			<CardBody>
-				<h1>{store.profile[2] && store.profile[2].acf.name}</h1>
-				<img className="userpic" src={store.profile[2] && store.profile[2].acf.image.url} />
+				<h1>{store.profile[4] && store.profile[4].acf.name}</h1>
+				<img className="userpic" src={store.profile[4] && store.profile[4].acf.image.url} />
 				<h2>Scout Ft.Lauderdale,FL</h2>
 				<div className="socialmediabuttons">
 					<a href="#" className="fab fa-instagram" />
