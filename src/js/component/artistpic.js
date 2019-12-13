@@ -12,8 +12,10 @@ const Artistcolumn = () => {
 				<h2>Artist</h2>
 				<h3>{store.profile[1] && store.profile[1].acf.location}</h3>
 				<div className="socialmediabuttons">
-					<a href="#" className="fab fa-instagram" />
-					<a href="#" className="fab fa-soundcloud" />
+					<a href="http://www.instagram.com" className="fab fa-instagram" />
+					<a href="http://soundcloud.com" className="fab fa-soundcloud" />
+					<a href="http://twitter.com" className="fab fa-twitter" />
+					<a href="http://facebook.com" className="fab fa-facebook" />
 				</div>
 				<div className="userrating">
 					<i className="fas fa-star" />
@@ -26,8 +28,8 @@ const Artistcolumn = () => {
 				</button>
 				<h2>{store.profile[1] && store.profile[1].acf.genre}</h2>
 				<p>
-					<strong>Scouts comments:</strong> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit.
+					<strong>Scouts comments:</strong> He truly is a versatile and one-of-kind artist. His passion for
+					rap is unmatched and he continously delivers.
 				</p>
 			</CardBody>
 		</Card>

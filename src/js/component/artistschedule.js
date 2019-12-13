@@ -9,7 +9,7 @@ const Artistschedule = () => {
 				<strong>
 					<CardTitle>Event Schedule</CardTitle>
 				</strong>
-				Friday December 13th, 2019 @ 8pm
+				Friday December 13th, 2019 at 8pm
 				<div className="mapouter">
 					<div className="gmap_canvas">
 						<iframe

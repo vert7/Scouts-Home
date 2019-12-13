@@ -6,7 +6,7 @@ const Artistwork = () => {
 		<CardColumns>
 			<Card>
 				<CardBody color="danger">
-					<CardText>3 track album</CardText>
+					<CardText>3 track album for your enjoyment below</CardText>
 					<iframe
 						width="100%"
 						height="600"
@@ -27,10 +27,10 @@ const Artistwork = () => {
 			</Card>
 			<Card>
 				<CardBody>
-					<CardTitle>Card title</CardTitle>
-					<CardSubtitle>Card subtitle</CardSubtitle>
+					<CardTitle>Ambient Sounds</CardTitle>
+					<CardSubtitle />
 					<CardText>
-						Check out what I have been working on.
+						Check out what I have been working on, been focusing on the instrumentals.
 						<iframe
 							width="100%"
 							height="300"
@@ -43,8 +43,10 @@ const Artistwork = () => {
 				</CardBody>
 			</Card>
 			<Card body inverse style={{ backgroundColor: "#333", borderColor: "#333" }}>
-				<CardTitle>Special Title Treatment</CardTitle>
-				<CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+				<CardTitle>So many ideas</CardTitle>
+				<CardText>
+					In need of a producer for my upcoming EP. I am looking to experiment with a different sound.{" "}
+				</CardText>
 				<CardImg
 					top
 					width="100%"
@@ -60,17 +62,19 @@ const Artistwork = () => {
 					alt="Card image cap"
 				/>
 				<CardBody>
-					<CardTitle>Card title</CardTitle>
-					<CardSubtitle>Card subtitle</CardSubtitle>
-					<CardText>
-						This is a wider card with supporting text below as a natural lead-in to additional content. This
-						card has even longer content than the first to show that equal height action.
-					</CardText>
+					<strong>
+						<CardTitle>Always in the booth</CardTitle>
+					</strong>
+					<CardSubtitle>Stay Tuned!</CardSubtitle>
+					<CardText>I got a new set of hits coming at ya</CardText>
 				</CardBody>
 			</Card>
 			<Card body inverse color="danger">
-				<CardTitle>Special Title Treatment</CardTitle>
-				<CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+				<CardTitle>Ozora Festival</CardTitle>
+				<CardText>
+					If you did not make it out there, here is a snippet of what you missed at Ozora Festival this past
+					August.
+				</CardText>
 				<iframe
 					width="100%"
 					height="300"
