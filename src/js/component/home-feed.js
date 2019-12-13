@@ -12,8 +12,8 @@ const Homefeed = () => {
 			<SplitPane split="vertical">
 				<Pane initialSize="200px" className="pane-edit">
 					<div className="yout1">
-						<img src={store.profile[0] && store.profile[0].acf.image.url} className="avatar1" />
-						{store.profile[0] && store.profile[0].acf.name}
+						<img src={store.profile[2] && store.profile[2].acf.image.url} className="avatar1" />
+						{store.profile[2] && store.profile[2].acf.name} <i className="fas fa-paint-brush" />
 					</div>
 					<div className="yout2">
 						<i className="far fa-newspaper" />
@@ -36,7 +36,7 @@ const Homefeed = () => {
 					<div className="crt-post">Create Post</div>
 					<FormGroup className="d-flex align-items-start">
 						<Label for="exampleText" className="column" id="left-comment-col">
-							<img src={store.profile[0] && store.profile[0].acf.image.url} className="avatar2" />
+							<img src={store.profile[2] && store.profile[2].acf.image.url} className="avatar2" />
 						</Label>
 						<Input
 							type="textarea"
@@ -68,7 +68,7 @@ const Homefeed = () => {
 								<div id="feed-main-header-text">{store.profile[3] && store.profile[3].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								4 hrs <i className="fas fa-binoculars" />
+								4 hrs <i className="fas fa-paint-brush" />
 								<p className="feed-content">{store.profile[3] && store.profile[3].acf.comments}</p>
 							</div>
 						</div>
@@ -96,36 +96,22 @@ const Homefeed = () => {
 								<div id="feed-main-header-text">{store.profile[1] && store.profile[1].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
-								3 hrs <i className="fas fa-binoculars" />
+								3 hrs <i className="fas fa-paint-brush" />
 								<p className="feed-content">{store.profile[1] && store.profile[1].acf.comments}</p>
 							</div>
 						</div>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main">
 						<div id="feed-main-header">
-							<img src={store.profile[5] && store.profile[5].acf.image.url} className="avatar2" />
+							<img src={store.profile[0] && store.profile[0].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
 							<Link to="/">
-								<div id="feed-main-header-text">{store.profile[5] && store.profile[5].acf.name}</div>
+								<div id="feed-main-header-text">{store.profile[0] && store.profile[0].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
 								10 hrs <i className="fas fa-binoculars" />
-								<p className="feed-content">{store.profile[5] && store.profile[5].acf.comments}</p>
-							</div>
-						</div>
-					</div>
-					<div className="d-flex justify-content-start" id="feed-main">
-						<div id="feed-main-header">
-							<img src={store.profile[6] && store.profile[6].acf.image.url} className="avatar2" />
-						</div>
-						<div className="list-detail">
-							<Link to="/">
-								<div id="feed-main-header-text">{store.profile[6] && store.profile[6].acf.name}</div>
-							</Link>
-							<div className="feed-user-detail">
-								30 min <i className="fas fa-binoculars" />
-								<p className="feed-content">{store.profile[6] && store.profile[6].acf.comments}</p>
+								<p className="feed-content">{store.profile[0] && store.profile[0].acf.comments}</p>
 							</div>
 						</div>
 					</div>

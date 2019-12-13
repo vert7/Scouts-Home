@@ -17,7 +17,7 @@ export class Navbar extends React.Component {
 									</span>
 								</Link>
 								<Link to="/discover">
-									<input className="discoverbar" type="text" name="search" placeholder="Discover" />
+									<button className="btn btn-primary">Discover</button>
 								</Link>
 								<div className="ml-auto">
 									<Link to="/signup">

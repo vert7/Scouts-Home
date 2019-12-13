@@ -26,6 +26,7 @@ export class Layout extends React.Component {
 					<ScrollToTop>
 						<Switch>
 							<Route path="/login" component={Login} />
+							<Route path="/homefeed" component={Homefeed} />
 							<Route path="/signup" component={Registration} />
 							<Route
 								path="/"
@@ -37,7 +38,6 @@ export class Layout extends React.Component {
 											<Route path="/discover" component={Discover} />
 											<Route exact path="/artistprofile" component={Artistprofile} />
 											<Route exact path="/scoutprofile" component={Scoutprofile} />
-											<Route path="/homefeed" component={Homefeed} />
 										</Switch>
 										<Footer />
 									</React.Fragment>
