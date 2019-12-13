@@ -1,37 +1,24 @@
-import React from "react";
 import { Card, CardTitle, CardText, CardSubtitle, CardBody } from "reactstrap";
+import React, { useContext } from "react";
+import { Context } from "../store/appContext.js";
 
 const Scoutbio = () => {
+	const { store } = useContext(Context);
 	return (
 		<Card>
 			<CardBody>
 				<strong>
 					<CardTitle>Looking for:</CardTitle>
 				</strong>
-				<CardText>
-					Pop singers with an edge. dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et d
-				</CardText>
+				<CardText>Pop singers with an edge. Someone that is ready to put in work and reach stardom.</CardText>
 				<strong>
 					<CardSubtitle>Experience:</CardSubtitle>
 				</strong>
-				<CardText>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-				</CardText>
+				<CardText>{store.profile[2] && store.profile[2].acf.experience}</CardText>
 				<strong>
 					<CardSubtitle>Artists Hired:</CardSubtitle>
 				</strong>
-				<CardText>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-					adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				</CardText>
+				<CardText>Sia, Dua Lipa, Billie Eilish, James Blake</CardText>
 			</CardBody>
 		</Card>
 	);

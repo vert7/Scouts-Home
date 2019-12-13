@@ -4,13 +4,16 @@ import Scoutbio from "../component/scoutbio";
 import Scoutcoverphoto from "../component/scoutcoverphoto";
 import Scoutcolumn from "../component/scoutpic";
 import Scoutwork from "../component/scoutwork";
+import Scoutfeature from "../component/scoutfeature";
 
 export const Scoutprofile = () => (
 	<div className="wrapper">
 		<div className="scout-col">
 			<Scoutcolumn />
 		</div>
-		<div className="col-sm-2 float-right" />
+		<div className="scoutfeature-col">
+			<Scoutfeature />
+		</div>
 		<div className="container col-lg-7">
 			<Scoutcoverphoto />
 			<Scoutbio />

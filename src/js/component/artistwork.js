@@ -27,7 +27,7 @@ const Artistwork = () => {
 			</Card>
 			<Card>
 				<CardBody>
-					<CardTitle>Ambient Sounds</CardTitle>
+					<CardTitle>Ambient</CardTitle>
 					<CardSubtitle />
 					<CardText>
 						Check out what I have been working on, been focusing on the instrumentals.

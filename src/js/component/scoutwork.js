@@ -56,7 +56,7 @@ const Scoutwork = () => {
 				/>
 			</Card>
 			<Card body inverse style={{ backgroundColor: "#333", borderColor: "#333" }}>
-				<CardTitle>Special Title Treatment</CardTitle>
+				<CardTitle>This Saturday</CardTitle>
 				<CardText>Performers needed for Nightclub opening</CardText>
 				<CardImg
 					top

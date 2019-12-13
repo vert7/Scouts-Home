@@ -1,15 +1,14 @@
-import React from "react";
 import { Card, CardBody } from "reactstrap";
+import { Context } from "../store/appContext.js";
+import React, { useContext } from "react";
 
 const Scoutcolumn = () => {
+	const { store } = useContext(Context);
 	return (
 		<Card>
 			<CardBody>
-				<h1>User Profile Name</h1>
-				<img
-					className="userpic"
-					src="https://images.pexels.com/photos/1534/man-person-technology-music.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-				/>
+				<h1>{store.profile[2] && store.profile[2].acf.name}</h1>
+				<img className="userpic" src={store.profile[2] && store.profile[2].acf.image.url} />
 				<h2>Scout Ft.Lauderdale,FL</h2>
 				<div className="socialmediabuttons">
 					<a href="#" className="fab fa-instagram" />
@@ -27,11 +26,9 @@ const Scoutcolumn = () => {
 				<button type="button" className="btn btn-default">
 					Message me
 				</button>
-				<h2>Previous Collaborators</h2>
 				<p>
-					<strong>Artists comments:</strong> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-					sint
+					<strong>Artists comments:</strong> I am very thankful for everything they have done for me. Could
+					not imagine myself where I am today without their guidance and support.
 				</p>
 			</CardBody>
 		</Card>
