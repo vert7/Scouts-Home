@@ -17,16 +17,19 @@ import avatar4 from "../../img/avatar4.jpg";
 import avatar5 from "../../img/avata5.png";
 import avatar6 from "../../img/avatar6.png";
 import avatar8 from "../../img/avatar8.jpg";
+import { useContext } from "react";
+import { Context } from "../store/appContext.js";
 
 const DiscoverCards = () => {
+	const { store } = useContext(Context);
 	return (
 		<div>
 			<CardColumns className="row-group">
 				<Link className="blur" to="/homefeed">
 					<Card className="cards-edit">
 						<CardTitle className="discover-card-title">
-							<img className="avatar1" src={Smiley} />
-							Profile Name
+							<img className="avatar1" src={store.profile[2] && store.profile[2].acf.image.url} />
+							{store.profile[2] && store.profile[2].acf.name}
 						</CardTitle>
 						<CardImg top width="100%" src={card1} alt="Card image cap" />
 						<CardBody className="cardbody-text-padding">

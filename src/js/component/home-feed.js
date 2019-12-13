@@ -55,9 +55,11 @@ const Homefeed = () => {
 							<i className="fas fa-user-tag" id="btn-commentbox-icon" />
 							Tag Amigos
 						</button>
-						<button className="p-2 bd-highlight" id="btn-commentbox">
-							...
-						</button>
+						<Link to="/">
+							<button className="p-2 bd-highlight" id="btn-commentbox">
+								...
+							</button>
+						</Link>
 					</div>
 					<div className="d-flex justify-content-start" id="feed-main2">
 						<div id="feed-main-header">
@@ -78,7 +80,7 @@ const Homefeed = () => {
 							<img src={store.profile[4] && store.profile[4].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
-							<Link to="/">
+							<Link to="/scoutprofile">
 								<div id="feed-main-header-text">{store.profile[4] && store.profile[4].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
@@ -92,7 +94,7 @@ const Homefeed = () => {
 							<img src={store.profile[1] && store.profile[1].acf.image.url} className="avatar2" />
 						</div>
 						<div className="list-detail">
-							<Link to="/">
+							<Link to="/artistprofile">
 								<div id="feed-main-header-text">{store.profile[1] && store.profile[1].acf.name}</div>
 							</Link>
 							<div className="feed-user-detail">
